@@ -34,10 +34,10 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
+      className={`sticky top-0 z-50 transition-all duration-300 border-b ${
         scrolled
           ? "border-white/10 bg-[color:var(--background)]/90 backdrop-blur-md"
-          : "border-transparent bg-transparent"
+          : "border-transparent bg-[color:var(--background)]/40 backdrop-blur-sm"
       }`}
     >
       <div className="container-x flex h-24 items-center justify-between">
