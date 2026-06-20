@@ -9,8 +9,11 @@ export function SiteFooter() {
       <div className="container-x py-24">
         <div className="flex flex-col md:flex-row justify-between items-start border-b border-white/10 pb-16 gap-12">
           <div className="max-w-sm">
-            <div className="font-display text-3xl font-bold uppercase tracking-tighter">
-              Zentra<span className="text-gold">.</span>
+            <div className="flex items-center gap-3">
+              <img src="/zentra-logo.png" alt="Zentra Trading" className="h-10 w-10 object-contain" />
+              <div className="font-display text-3xl font-bold uppercase tracking-tighter">
+                Zentra<span className="text-gold">.</span>
+              </div>
             </div>
             <p className="mt-5 text-sm text-white/50 leading-relaxed">{t("footer.tagline")}</p>
             <div className="mt-6 space-y-1 text-white/30 text-[10px] uppercase tracking-[0.3em] font-bold">
