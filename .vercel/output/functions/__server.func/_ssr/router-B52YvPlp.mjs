@@ -5,10 +5,10 @@ import { _ as useRouter, c as HeadContent, d as createRouter, f as Outlet, g as 
 import { O as Check, S as Globe, _ as Mail, d as Phone, g as MapPin, h as Menu, m as MessageCircle, n as UserRound, p as Moon, r as Twitter, s as Sun, t as X, v as Linkedin, w as Facebook } from "../_libs/lucide-react.mjs";
 import { t as hero_trading_default } from "./hero-trading-Dc-vF-GR.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CRndmHwX.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-B52YvPlp.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-Deps8R-Y.css";
+var styles_default = "/assets/styles-CSy4kjN8.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -27,7 +27,7 @@ function Logo() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 			src: "/zentra-logo.png",
 			alt: "Zentra Trading",
-			className: "h-14 w-14 md:h-16 md:w-16 object-contain"
+			className: "h-14 w-auto md:h-16 md:w-auto object-contain"
 		})
 	});
 }
@@ -180,7 +180,7 @@ function SiteHeader() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
 		className: `sticky top-0 z-50 transition-all duration-300 border-b ${scrolled ? "border-white/10 bg-[color:var(--background)]/90 backdrop-blur-md" : "border-transparent bg-[color:var(--background)]/40 backdrop-blur-sm"}`,
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "container-x flex h-20 items-center justify-between gap-4",
+			className: "container-x flex h-24 items-center justify-between gap-4",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 					to: "/",

@@ -40,7 +40,7 @@ export function SiteHeader() {
           : "border-transparent bg-[color:var(--background)]/40 backdrop-blur-sm"
       }`}
     >
-      <div className="container-x flex h-20 items-center justify-between gap-4">
+      <div className="container-x flex h-24 items-center justify-between gap-4">
         <Link to="/" aria-label="Zentra Trading home" className="flex items-center shrink-0">
           <Logo />
         </Link>

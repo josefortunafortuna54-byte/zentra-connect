@@ -4,7 +4,7 @@ export function Logo() {
       <img
         src="/zentra-logo.png"
         alt="Zentra Trading"
-        className="h-14 w-14 md:h-16 md:w-16 object-contain"
+        className="h-14 w-auto md:h-16 md:w-auto object-contain"
       />
     </div>
   );

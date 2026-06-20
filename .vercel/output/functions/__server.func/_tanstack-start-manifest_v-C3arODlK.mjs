@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-D8sNlK-u.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-C3arODlK.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "/home/fortuna/Desktop/zentra-connect/src/routes/__root.tsx",
@@ -12,21 +12,21 @@ var tsrStartManifest = () => ({ routes: {
 			"/opportunities",
 			"/partnership"
 		],
-		preloads: ["/assets/index-B2mxO1NP.js", "/assets/i18n-BtnjJR2u.js"],
+		preloads: ["/assets/index-B0WRkRWa.js", "/assets/i18n-BtnjJR2u.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-B2mxO1NP.js"
+			src: "/assets/index-B0WRkRWa.js"
 		} }]
 	},
 	"/": {
 		filePath: "/home/fortuna/Desktop/zentra-connect/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-JQf0BGbJ.js",
-			"/assets/arrow-right-CfpA5A58.js",
-			"/assets/trending-up-BMRZ8txB.js",
-			"/assets/shield-check-BKx0hqw6.js",
+			"/assets/routes-D8aMuhAg.js",
+			"/assets/arrow-right-CUAdLXtW.js",
+			"/assets/trending-up-D0kGqub_.js",
+			"/assets/shield-check-S-rIwi4V.js",
 			"/assets/commodity-industrial-Bg1cMnur.js"
 		]
 	},
@@ -34,8 +34,8 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "/home/fortuna/Desktop/zentra-connect/src/routes/about.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/about-CxRCPdjh.js",
-			"/assets/arrow-right-CfpA5A58.js",
+			"/assets/about-BfGb_pnO.js",
+			"/assets/arrow-right-CUAdLXtW.js",
 			"/assets/PageHero-CdAo6TJ3.js"
 		]
 	},
@@ -52,9 +52,9 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "/home/fortuna/Desktop/zentra-connect/src/routes/contact.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/contact-BoDUMtfD.js",
-			"/assets/arrow-right-CfpA5A58.js",
-			"/assets/shield-check-BKx0hqw6.js",
+			"/assets/contact-DBwtjNRc.js",
+			"/assets/arrow-right-CUAdLXtW.js",
+			"/assets/shield-check-S-rIwi4V.js",
 			"/assets/PageHero-CdAo6TJ3.js"
 		]
 	},
@@ -62,10 +62,10 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "/home/fortuna/Desktop/zentra-connect/src/routes/how-it-works.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/how-it-works-CseXpIPP.js",
-			"/assets/arrow-right-CfpA5A58.js",
-			"/assets/trending-up-BMRZ8txB.js",
-			"/assets/shield-check-BKx0hqw6.js",
+			"/assets/how-it-works-C4XLePjc.js",
+			"/assets/arrow-right-CUAdLXtW.js",
+			"/assets/trending-up-D0kGqub_.js",
+			"/assets/shield-check-S-rIwi4V.js",
 			"/assets/PageHero-CdAo6TJ3.js"
 		]
 	},
@@ -73,8 +73,8 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "/home/fortuna/Desktop/zentra-connect/src/routes/insights.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/insights-C623gRdG.js",
-			"/assets/arrow-right-CfpA5A58.js",
+			"/assets/insights-ClPMRXnH.js",
+			"/assets/arrow-right-CUAdLXtW.js",
 			"/assets/PageHero-CdAo6TJ3.js"
 		]
 	},
@@ -82,8 +82,8 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "/home/fortuna/Desktop/zentra-connect/src/routes/opportunities.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/opportunities-B9d_lWW2.js",
-			"/assets/arrow-right-CfpA5A58.js",
+			"/assets/opportunities-D5vZIbuv.js",
+			"/assets/arrow-right-CUAdLXtW.js",
 			"/assets/PageHero-CdAo6TJ3.js"
 		]
 	},
@@ -91,8 +91,8 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "/home/fortuna/Desktop/zentra-connect/src/routes/partnership.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/partnership-CMBuJOyk.js",
-			"/assets/arrow-right-CfpA5A58.js",
+			"/assets/partnership-omXpyr34.js",
+			"/assets/arrow-right-CUAdLXtW.js",
 			"/assets/PageHero-CdAo6TJ3.js"
 		]
 	}
