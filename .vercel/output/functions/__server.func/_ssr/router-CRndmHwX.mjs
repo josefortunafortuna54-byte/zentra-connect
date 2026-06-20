@@ -5,10 +5,10 @@ import { _ as useRouter, c as HeadContent, d as createRouter, f as Outlet, g as 
 import { O as Check, S as Globe, _ as Mail, d as Phone, g as MapPin, h as Menu, m as MessageCircle, n as UserRound, p as Moon, r as Twitter, s as Sun, t as X, v as Linkedin, w as Facebook } from "../_libs/lucide-react.mjs";
 import { t as hero_trading_default } from "./hero-trading-Dc-vF-GR.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-Co1wlQ0o.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CRndmHwX.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-BDpOkd1F.css";
+var styles_default = "/assets/styles-Deps8R-Y.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -22,22 +22,13 @@ function reportLovableError(error, context = {}) {
 	});
 }
 function Logo() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "flex items-center gap-2.5",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "flex items-center",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 			src: "/zentra-logo.png",
 			alt: "Zentra Trading",
-			className: "h-10 w-10 md:h-11 md:w-11 object-contain"
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "leading-none",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "font-display text-lg md:text-xl font-bold tracking-tight text-[color:var(--navy)] dark:text-foreground",
-				children: "ZENTRA"
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "mt-1 text-[8px] md:text-[9px] tracking-[0.45em] font-semibold text-foreground/60",
-				children: "TRADING"
-			})]
-		})]
+			className: "h-14 w-14 md:h-16 md:w-16 object-contain"
+		})
 	});
 }
 var ThemeContext = (0, import_react.createContext)({
