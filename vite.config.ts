@@ -5,11 +5,22 @@
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { nitro } from "nitro/vite";
 
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+  },
+  // Override the default Nitro target (cloudflare) so the build output is shaped
+  // for Vercel Functions instead of a Cloudflare Worker. This fixes 404s on all
+  // routes when deploying a Lovable/TanStack Start app to Vercel.
+  vite: {
+    plugins: [
+      nitro({
+        preset: "vercel",
+      }),
+    ],
   },
 });
