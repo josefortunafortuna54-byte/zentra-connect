@@ -1,5 +1,5 @@
 import { o as initializeApp } from "../_libs/@firebase/app+[...].mjs";
-import { n as getAuth } from "../_libs/firebase__auth.mjs";
+import { r as getAuth } from "../_libs/firebase__auth.mjs";
 import "../_libs/firebase.mjs";
 import { l as getFirestore } from "../_libs/@firebase/firestore+[...].mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/firebase-BZtSKUGz.js

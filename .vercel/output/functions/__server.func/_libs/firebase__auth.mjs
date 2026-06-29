@@ -4364,7 +4364,13 @@ function getAuth(app = getApp()) {
 	return auth;
 }
 registerAuth("Node");
-_createError("operation-not-supported-in-this-environment");
+/** auth/operation-not-supported-in-this-environment */
+var NOT_AVAILABLE_ERROR = _createError("operation-not-supported-in-this-environment");
+/** Reject with auth/operation-not-supported-in-this-environment */
+async function fail() {
+	throw NOT_AVAILABLE_ERROR;
+}
+var signInWithPopup = fail;
 AuthImpl.prototype.setPersistence = async () => {};
 /**
 * @license
@@ -4539,4 +4545,4 @@ function _isEmptyString(input) {
 	return typeof input === "undefined" || input?.length === 0;
 }
 //#endregion
-export { signInWithEmailAndPassword as a, sendPasswordResetEmail as i, getAuth as n, signOut as o, onAuthStateChanged as r, createUserWithEmailAndPassword as t };
+export { sendPasswordResetEmail as a, signOut as c, onAuthStateChanged as i, createUserWithEmailAndPassword as n, signInWithEmailAndPassword as o, getAuth as r, signInWithPopup as s, GoogleAuthProvider as t };

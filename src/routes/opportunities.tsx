@@ -55,7 +55,7 @@ function Opportunities() {
             <option>{t("comm.industrial")}</option>
           </select>
           <select className="rounded-lg border border-input bg-white px-3 py-2.5 text-sm">
-            <option>{t("opp.anyCountry")}</option><option>Angola</option><option>Brazil</option><option>China</option>
+            <option>{t("opp.anyCountry")}</option><option>United Kingdom</option><option>Angola</option><option>Brazil</option><option>China</option>
           </select>
           <select className="rounded-lg border border-input bg-white px-3 py-2.5 text-sm">
             <option>{t("opp.anyQty")}</option><option>{t("opp.qtySmall")}</option><option>{t("opp.qtyLarge")}</option>

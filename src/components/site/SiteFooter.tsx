@@ -9,15 +9,12 @@ export function SiteFooter() {
       <div className="container-x py-24">
         <div className="flex flex-col md:flex-row justify-between items-start border-b border-white/10 pb-16 gap-12">
           <div className="max-w-sm">
-            <div className="flex items-center gap-3">
-              <img src="/zentra-logo.png" alt="Veloz" className="h-10 w-10 object-contain" />
-              <div className="font-display text-3xl font-bold uppercase tracking-tighter">
-                Veloz<span className="text-gold">.</span>
-              </div>
+            <div className="flex items-center">
+              <img src="/zentra-logo.png" alt="Veloz" className="h-20 w-auto object-contain" />
             </div>
             <p className="mt-5 text-sm text-white/50 leading-relaxed">{t("footer.tagline")}</p>
             <div className="mt-6 space-y-1 text-white/30 text-[10px] uppercase tracking-[0.3em] font-bold">
-              <p>Luanda · São Paulo · Geneva · Singapore</p>
+              <p>London · São Paulo · Geneva · Singapore</p>
             </div>
             <div className="mt-6 flex gap-3">
               {([
@@ -59,8 +56,8 @@ export function SiteFooter() {
             <div className="space-y-5">
               <h4 className="text-gold text-[10px] uppercase tracking-[0.3em] font-bold">{t("footer.contactH")}</h4>
               <ul className="space-y-3 text-sm text-white/60">
-                <li className="flex items-start gap-2.5"><MapPin className="h-4 w-4 mt-0.5 text-gold shrink-0" />Luanda, Angola</li>
-                <li className="flex items-start gap-2.5"><Phone className="h-4 w-4 mt-0.5 text-gold shrink-0" />+244 926 599 991</li>
+                <li className="flex items-start gap-2.5"><MapPin className="h-4 w-4 mt-0.5 text-gold shrink-0" />128 City Road, London, EC1V 2NX</li>
+                <li className="flex items-start gap-2.5"><Phone className="h-4 w-4 mt-0.5 text-gold shrink-0" />+44 7564155651</li>
                 <li className="flex items-start gap-2.5"><Mail className="h-4 w-4 mt-0.5 text-gold shrink-0" />info@veloz.com</li>
               </ul>
             </div>

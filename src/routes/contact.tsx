@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Veloz" },
-      { name: "description", content: "Reach Veloz in Luanda, Angola. Phone, email and registration form for global commodity opportunities." },
+      { name: "description", content: "Reach Veloz in London, UK. Phone, email and registration form for global commodity opportunities." },
       { property: "og:title", content: "Contact — Veloz" },
       { property: "og:url", content: "https://zentratrading.com/contact" },
     ],
@@ -23,8 +23,8 @@ export const Route = createFileRoute("/contact")({
 function Contact() {
   const { t } = useI18n();
   const CONTACTS: { icon: typeof Mail; labelKey: TKey; value: string }[] = [
-    { icon: MapPin, labelKey: "contact.address", value: "Luanda, Angola" },
-    { icon: Phone, labelKey: "contact.phoneWa", value: "+244 926 599 991" },
+    { icon: MapPin, labelKey: "contact.address", value: "128 City Road, London, EC1V 2NX" },
+    { icon: Phone, labelKey: "contact.phoneWa", value: "+44 7564155651" },
     { icon: Mail, labelKey: "contact.email", value: "info@veloz.com" },
     { icon: Globe2, labelKey: "contact.website", value: "www.veloz.com" },
   ];
@@ -87,8 +87,8 @@ function Contact() {
           ))}
           <div className="overflow-hidden rounded-2xl border border-border shadow-card">
             <iframe
-              title="Veloz — Luanda, Angola"
-              src="https://www.google.com/maps?q=Luanda,Angola&output=embed"
+              title="Veloz — London, UK"
+              src="https://www.google.com/maps?q=128+City+Road,+London,+EC1V+2NX,+UK&output=embed"
               className="h-72 w-full"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -108,7 +108,7 @@ function Contact() {
               label={t("form.country")}
               name="country"
               placeholder={t("form.selectPlaceholder")}
-              options={["Angola","Nigeria","South Africa","Brazil","China","USA","Other"]}
+              options={["United Kingdom","Angola","Nigeria","South Africa","Brazil","China","USA","Other"]}
               error={errors.country ? t(errors.country as TKey) : undefined}
             />
             <SelectField

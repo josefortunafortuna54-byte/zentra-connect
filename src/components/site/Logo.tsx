@@ -4,7 +4,7 @@ export function Logo() {
       <img
         src="/zentra-logo.png"
         alt="Veloz"
-        className="h-14 w-auto md:h-16 md:w-auto object-contain"
+        className="h-20 w-auto md:h-24 md:w-auto object-contain"
       />
     </div>
   );

@@ -8,16 +8,16 @@ const HUBS: Hub[] = [
   { name: "New York", coords: [-74.006, 40.7128] },
   { name: "São Paulo", coords: [-46.6333, -23.5505] },
   { name: "Geneva", coords: [6.1432, 46.2044] },
-  { name: "Luanda", coords: [13.2343, -8.8383] },
+  { name: "London", coords: [-0.1276, 51.5074] },
   { name: "Dubai", coords: [55.2708, 25.2048] },
   { name: "Singapore", coords: [103.8198, 1.3521] },
   { name: "Shanghai", coords: [121.4737, 31.2304] },
 ];
 
 const ROUTES: [number, number][] = [
-  [3, 1], // Luanda → São Paulo
-  [3, 2], // Luanda → Geneva
-  [3, 4], // Luanda → Dubai
+  [3, 1], // London → São Paulo
+  [3, 2], // London → Geneva
+  [3, 4], // London → Dubai
   [4, 5], // Dubai → Singapore
   [5, 6], // Singapore → Shanghai
   [2, 0], // Geneva → NY

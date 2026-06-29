@@ -36,6 +36,7 @@ export async function submitRegister(data: RegisterInput) {
   try {
     const docRef = await addDoc(collection(db, "leads"), {
       ...data,
+      status: "new",
       createdAt: serverTimestamp(),
     });
     return { success: true, id: docRef.id };
@@ -48,6 +49,7 @@ export async function submitContact(data: ContactInput) {
   try {
     const docRef = await addDoc(collection(db, "contacts"), {
       ...data,
+      status: "new",
       createdAt: serverTimestamp(),
     });
     return { success: true, id: docRef.id };

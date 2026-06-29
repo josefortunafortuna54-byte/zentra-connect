@@ -5,6 +5,8 @@ import {
   createUserWithEmailAndPassword,
   sendPasswordResetEmail,
   signOut,
+  GoogleAuthProvider,
+  signInWithPopup,
   type User,
 } from "firebase/auth";
 import { auth } from "./firebase";
@@ -16,6 +18,7 @@ type AuthCtx = {
   register: (email: string, password: string) => Promise<User>;
   resetPassword: (email: string) => Promise<void>;
   logout: () => Promise<void>;
+  signInWithGoogle: () => Promise<void>;
 };
 
 const AuthContext = createContext<AuthCtx>({
@@ -25,6 +28,7 @@ const AuthContext = createContext<AuthCtx>({
   register: async () => null as unknown as User,
   resetPassword: async () => {},
   logout: async () => {},
+  signInWithGoogle: async () => {},
 });
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -52,12 +56,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await sendPasswordResetEmail(auth, email);
   };
 
+  const signInWithGoogle = async () => {
+    const provider = new GoogleAuthProvider();
+    provider.setCustomParameters({ prompt: "select_account" });
+    await signInWithPopup(auth, provider);
+  };
+
   const logout = async () => {
     await signOut(auth);
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, register, resetPassword, logout }}>
+    <AuthContext.Provider value={{ user, loading, login, register, resetPassword, logout, signInWithGoogle }}>
       {children}
     </AuthContext.Provider>
   );
