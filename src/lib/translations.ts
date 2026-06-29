@@ -93,6 +93,18 @@ const en = {
   "common.whatsappAria": "Chat on WhatsApp",
   "common.openMenu": "Toggle menu",
 
+  // landing gate
+  "landing.tagline": "Global Commodity Trading Made Simple",
+  "landing.continueGoogle": "Continue with Google",
+  "landing.signingIn": "Signing in\u2026",
+  "landing.error": "Failed to sign in with Google. Please try again.",
+  "landing.or": "or",
+  "landing.existingUser": "Existing user?",
+  "landing.signInEmail": "Sign in with email",
+  "landing.newHere": "New here?",
+  "landing.createAccount": "Create account",
+  "landing.secured": "Secured with Firebase Authentication",
+
   // forms
   "form.fullName": "Full Name",
   "form.companyName": "Company Name",
@@ -468,6 +480,18 @@ const pt: Record<keyof typeof en, string> = {
   "common.joinOurNetwork": "Junte-se à Nossa Rede",
   "common.whatsappAria": "Falar no WhatsApp",
   "common.openMenu": "Abrir menu",
+
+  // landing gate
+  "landing.tagline": "Negociação Global de Commodities Simplificada",
+  "landing.continueGoogle": "Continuar com o Google",
+  "landing.signingIn": "Entrando\u2026",
+  "landing.error": "Falha ao entrar com o Google. Tente novamente.",
+  "landing.or": "ou",
+  "landing.existingUser": "Já tem conta?",
+  "landing.signInEmail": "Entrar com e-mail",
+  "landing.newHere": "Novo por aqui?",
+  "landing.createAccount": "Criar conta",
+  "landing.secured": "Protegido com Firebase Authentication",
 
   "form.fullName": "Nome Completo",
   "form.companyName": "Nome da Empresa",

@@ -48,6 +48,7 @@ function HomePage() {
 }
 
 function LandingGate({ onGoogleSignIn }: { onGoogleSignIn: () => Promise<void> }) {
+  const { t } = useI18n();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -58,9 +59,16 @@ function LandingGate({ onGoogleSignIn }: { onGoogleSignIn: () => Promise<void> }
       await onGoogleSignIn();
     } catch (err: unknown) {
       const e = err as { code?: string };
-      if (e.code !== "auth/popup-closed-by-user") {
-        setError("Failed to sign in with Google. Please try again.");
+      if (e.code === "auth/popup-closed-by-user") return;
+      if (e.code === "auth/popup-blocked") {
+        setError("Popup blocked. Please allow popups for this site and try again.");
+        return;
       }
+      if (e.code === "auth/unauthorized-domain") {
+        setError("This domain is not authorized for Google sign-in. Contact the administrator.");
+        return;
+      }
+      setError(t("landing.error"));
     } finally {
       setLoading(false);
     }
@@ -99,7 +107,7 @@ function LandingGate({ onGoogleSignIn }: { onGoogleSignIn: () => Promise<void> }
             Veloz
           </h1>
           <p className="text-white/50 text-sm mb-10 max-w-xs mx-auto leading-relaxed">
-            Global Commodity Trading Made Simple
+            {t("landing.tagline")}
           </p>
 
           <button
@@ -113,7 +121,7 @@ function LandingGate({ onGoogleSignIn }: { onGoogleSignIn: () => Promise<void> }
               <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
               <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
             </svg>
-            {loading ? "Signing in..." : "Continue with Google"}
+            {loading ? t("landing.signingIn") : t("landing.continueGoogle")}
           </button>
 
           {error && (
@@ -122,27 +130,27 @@ function LandingGate({ onGoogleSignIn }: { onGoogleSignIn: () => Promise<void> }
 
           <div className="mt-8 flex items-center gap-3">
             <span className="h-px flex-1 bg-white/10" />
-            <span className="text-[10px] uppercase tracking-[0.3em] text-white/30 font-bold">or</span>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-white/30 font-bold">{t("landing.or")}</span>
             <span className="h-px flex-1 bg-white/10" />
           </div>
 
           <p className="mt-6 text-xs text-white/40">
-            Existing user?{" "}
+            {t("landing.existingUser")}{" "}
             <Link to="/login" className="text-gold font-semibold hover:underline transition-colors">
-              Sign in with email
+              {t("landing.signInEmail")}
             </Link>
           </p>
 
           <p className="mt-4 text-xs text-white/40">
-            New here?{" "}
+            {t("landing.newHere")}{" "}
             <Link to="/register" className="text-gold font-semibold hover:underline transition-colors">
-              Create account
+              {t("landing.createAccount")}
             </Link>
           </p>
 
           <div className="mt-8 flex items-center justify-center gap-2 text-[10px] text-white/30 uppercase tracking-[0.2em] font-bold">
             <ShieldCheck className="h-3.5 w-3.5 text-gold" />
-            Secured with Firebase Authentication
+            {t("landing.secured")}
           </div>
         </div>
       </div>
